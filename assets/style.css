@@ -1,0 +1,419 @@
+@font-face {
+  font-family: "mainPolice";
+  src: url("font/Raleway-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: "mainPolice";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  font-size: 14px;
+}
+
+h1 {
+  margin-bottom: unset;
+  font-size: 25px;
+}
+
+/* h3 {
+  margin-bottom: unset;
+} */
+
+input {
+  border: solid 1px #f2f2f2;
+  font-weight: bolder;
+  padding: 3%;
+}
+
+input::placeholder {
+  color: black;
+}
+
+form {
+  display: inline-flex;
+  height: 100%;
+}
+
+header {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding-left: 1%;
+}
+
+nav {
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #acacac;
+}
+
+header a img {
+  width: 100px;
+}
+
+nav ul {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav ul li a {
+  height: 100%;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 2%;
+}
+nav ul li a:hover {
+  color: #0065fc;
+}
+
+nav ul li a:focus {
+  border-top: 2px solid #0065fc;
+}
+
+.search {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-bar {
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.icon-search {
+  width: 35px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px 0px 0px 12px;
+  background-color: #f2f2f2;
+}
+
+.icon-search .fa {
+  transform: scale(1.2);
+}
+
+.filter {
+  height: 20%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.button-1 {
+  width: 150px;
+  background-color: #0065fc;
+  color: white;
+  border-radius: 1px 10px 10px 1px;
+  border: none;
+  font-family: "mainPolice";
+}
+
+.button-1:hover {
+  cursor: pointer;
+}
+
+.filter-button {
+  height: 100%;
+  width: auto;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 3%;
+  margin-right: 3%;
+  border: solid 1px #f2f2f2;
+}
+
+.filter-button:hover {
+  background-color: #0065fc;
+  color: white;
+  cursor: pointer;
+}
+
+.filter-button .fas {
+  transform: scale(1.2);
+  color: #0065fc;
+}
+
+.filter-button p {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-button-logo {
+  background-color: #deebff;
+  height: 42px;
+  width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-left: -5px;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+  margin-top: 15px;
+}
+
+.information p {
+  width: 90%;
+}
+
+.information .fas {
+  width: 4%;
+  padding: 5px;
+  border: solid 1px;
+  text-align: center;
+  border-radius: 50%;
+  color: #0065fc;
+  border-color: black;
+}
+
+.information span {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+@media screen and (max-device-width: 768px) {
+  header {
+    height: auto;
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  nav ul {
+    width: 105%;
+    justify-content: space-between;
+    padding: unset;
+  }
+
+  nav ul li {
+    width: 50%;
+    flex-direction: row;
+    padding-bottom: 3px;
+  }
+
+  nav ul li a {
+    width: 100%;
+    display: unset;
+    text-align: center;
+  }
+
+  nav ul li a:focus {
+    border-top: unset;
+    border-bottom: 4px solid #0065fc;
+  }
+
+  .search-bar {
+    margin-top: 2%;
+  }
+
+  .filter {
+    margin-top: 3%;
+    justify-content: flex-start;
+  }
+
+  .filter p {
+    width: 100%;
+  }
+
+  .filter-button {
+    width: 195px;
+    margin-bottom: 1%;
+  }
+
+  .filter-button-logo {
+    width: 55px;
+  }
+
+  .accommodation {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .accommodation-container {
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  aside {
+    width: auto;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 992px) and (min-width: 768px) and (max-width: 992px) {
+  .filter {
+    width: auto;
+  }
+}
+
+.accommodation {
+  margin-top: 50px;
+  /* height: 500px; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.accommodation-container {
+  width: 60%;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.accommodation-container h3 {
+  padding-left: 15px;
+}
+
+body > section > div > a {
+  font-size: 14px;
+  padding: 24px;
+  width: 93px;
+}
+
+body > section > div > a:hover {
+  color: blue;
+}
+
+.accommodation-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.accommodation-cards-container a {
+  flex-basis: 210px;
+  height: 176px;
+}
+
+.accommodation-card {
+  height: 176px;
+  border-radius: 10px;
+  padding: 3px;
+  transition: all ease-in-out 0.2s;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.accommodation-card img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.accommodation-card:hover {
+  transform: scale(1.02);
+}
+
+.accommodation-card p {
+  margin: 4px;
+  padding-left: 5px;
+}
+
+aside {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.popular-title {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .popular-title h3 {
+  margin: unset;
+} */
+
+.popular-cards-container {
+  width: 80%;
+  height: 91%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.popular-card {
+  width: auto;
+  height: 110px;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  transition: all ease-in-out 0.2s;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.popular-card img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 40%;
+  object-fit: cover;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.popular-card:hover {
+  transform: scale(1.02);
+}
+
+.popular-card-description {
+  margin-left: 8px;
+}
+
+.popular-card-description p {
+  margin: 8px;
+}
