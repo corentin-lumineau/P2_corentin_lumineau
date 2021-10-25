@@ -48,6 +48,10 @@ input {
   padding: 3%;
 }
 
+input .button-1 {
+  font-size: 15px;
+}
+
 input::placeholder {
   color: black;
 }
