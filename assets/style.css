@@ -570,7 +570,7 @@ aside {
 
   .accommodation-cards-container {
     justify-content: flex-start;
-    gap: 4px;
+    gap: 20px;
     width: 90%;
     flex-direction: column;
   }
