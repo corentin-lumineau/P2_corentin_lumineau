@@ -518,9 +518,7 @@ aside {
 }
 
 footer {
-  height: 205px;
-  display: flex;
-  justify-content: center;
+  height: auto;
   background-color: #f2f2f2;
 }
 
@@ -531,13 +529,13 @@ footer p {
 .footer-main-container {
   display: flex;
   justify-content: flex-start;
-  width: 1500px;
+  max-width: 1500px;
   height: 100%;
-  gap: 75px;
+  gap: 220px;
+  margin: auto;
 }
 
 .footer-container {
-  width: 25%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -592,7 +590,7 @@ footer p {
   }
 
   nav ul {
-    width: 105%;
+    width: 100%;
     justify-content: space-between;
     padding: unset;
   }
@@ -651,6 +649,7 @@ footer p {
     background: white;
     flex-direction: column;
     align-items: center;
+    padding: unset;
   }
 
   .accommodation-container h3 {
@@ -667,7 +666,8 @@ footer p {
   }
 
   .accommodation-cards-container {
-    width: 90%;
+    justify-content: center;
+    padding: 35px;
   }
 
   .accommodation-cards-container a {
@@ -675,11 +675,11 @@ footer p {
     display: flex;
     justify-content: center;
     width: 100%;
+    max-width: 480px;
   }
 
   .accommodation-card {
-    max-width: 480px;
-    min-width: 480px;
+    width: 100%;
   }
 
   aside {
@@ -687,6 +687,7 @@ footer p {
     margin-right: 0px;
     border-radius: 0px;
     margin-top: 20px;
+    padding: unset;
   }
 
   .popular-cards-container {
