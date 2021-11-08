@@ -10,7 +10,10 @@
 
 body {
   font-family: "mainPolice";
-  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: unset;
 }
 
 .main-container {
@@ -89,7 +92,6 @@ header a img {
 }
 
 nav ul {
-  width: 20%;
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -147,14 +149,21 @@ nav ul li a:hover {
 .filter {
   height: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   margin-top: 2%;
+  gap: 20px;
 }
 
 .filter p {
   margin-right: 20px;
+}
+
+.filter-categories {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .button-1 {
@@ -427,7 +436,7 @@ aside {
   height: 80%;
   display: flex;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 20px;
 }
 
 .activité-container {
@@ -511,14 +520,20 @@ aside {
 footer {
   height: 205px;
   display: flex;
-  justify-content: flex-start;
-  gap: 75px;
-  padding-left: 35px;
+  justify-content: center;
   background-color: #f2f2f2;
 }
 
 footer p {
   font-size: 14px;
+}
+
+.footer-main-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 1500px;
+  height: 100%;
+  gap: 75px;
 }
 
 .footer-container {
@@ -527,6 +542,7 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 35px;
 }
 
 .footer-container-title {
@@ -610,8 +626,7 @@ footer p {
   }
 
   .filter {
-    margin-top: 3%;
-    justify-content: flex-start;
+    display: block;
     width: auto;
   }
 
@@ -652,21 +667,19 @@ footer p {
   }
 
   .accommodation-cards-container {
-    justify-content: flex-start;
-    gap: 20px;
     width: 90%;
-    flex-direction: column;
   }
 
   .accommodation-cards-container a {
     flex-basis: unset;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    padding-left: unset;
-    margin-top: unset;
   }
 
   .accommodation-card {
     max-width: 480px;
+    min-width: 480px;
   }
 
   aside {
@@ -701,7 +714,9 @@ footer p {
   }
 
   .activité-main-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: auto;
   }
 
@@ -757,6 +772,11 @@ footer p {
   footer {
     height: auto;
     display: block;
+  }
+
+  .footer-main-container {
+    display: block;
+    width: auto;
   }
 
   .footer-container {
