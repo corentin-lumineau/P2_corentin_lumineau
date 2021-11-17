@@ -90,6 +90,7 @@ nav a {
 
 header a img {
   width: 100px;
+  margin: unset;
 }
 
 nav ul {
@@ -602,6 +603,10 @@ footer p {
 
   header {
     height: auto;
+  }
+
+  header a img {
+    margin-left: 45px;
   }
 
   nav {
