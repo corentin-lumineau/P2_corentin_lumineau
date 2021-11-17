@@ -589,6 +589,10 @@ footer p {
     min-width: 100%;
     max-height: 50%;
   }
+
+  header a img {
+    margin-left: unset;
+  }
 }
 
 @media screen and (max-device-width: 860px) {
