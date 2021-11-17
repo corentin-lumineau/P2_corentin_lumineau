@@ -23,7 +23,7 @@ body {
 }
 
 .main-container {
-  max-width: 1500px;
+  max-width: 1300px;
   margin: auto;
 }
 
@@ -278,7 +278,7 @@ nav ul li a:hover {
 }
 
 .accommodation-container {
-  width: 62%;
+  width: 60%;
   background-color: #f2f2f2;
   border-radius: 15px;
   display: flex;
