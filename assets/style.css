@@ -547,11 +547,11 @@ footer p {
 .footer-main-container {
   display: flex;
   justify-content: flex-start;
-  max-width: 1500px;
+  max-width: 1235px;
   height: 100%;
   gap: 220px;
   margin: auto;
-  padding: 15px;
+  padding: 35px;
 }
 
 .footer-container {
@@ -559,7 +559,6 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 35px;
 }
 
 .footer-container-title {
