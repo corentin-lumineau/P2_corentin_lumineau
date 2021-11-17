@@ -376,6 +376,7 @@ body > section > div > a:hover {
 
 .more-information {
   width: 100%;
+  padding-left: 15px;
 }
 
 aside {
