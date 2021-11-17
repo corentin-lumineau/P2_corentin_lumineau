@@ -550,6 +550,7 @@ footer p {
   height: 100%;
   gap: 220px;
   margin: auto;
+  padding: 15px;
 }
 
 .footer-container {
@@ -571,10 +572,6 @@ footer p {
 @media screen and (max-device-width: 1109px) {
   .filter {
     width: auto;
-  }
-
-  .accommodation-cards-container {
-    justify-content: center;
   }
 
   .popular-cards-container {
@@ -717,7 +714,6 @@ footer p {
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 480px;
   }
 
   .accommodation-card {
@@ -770,7 +766,6 @@ footer p {
 
   .activité-container {
     width: 100%;
-    max-width: 480px;
     height: 200px;
   }
 
